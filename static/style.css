@@ -1,0 +1,36 @@
+
+*{
+    box-sizing:border-box;
+    margin: auto;
+}
+.container{
+
+    background-image: url("book.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+table{
+    padding:7px;
+    margin-top:30px;
+}
+tr td{
+    margin:30px;
+    padding:20px;
+}
+
+input:hover{
+    background-color: rgb(134, 218, 134);
+    border: 0px;
+}
+input{
+   height:20px;
+}
+
+.result{
+    text-align: center; 
+    color: green;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: large;
+    background-color: white;
+}

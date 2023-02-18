@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iris Accuracy</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="container" border="2px solid green">
+        <h1 style="text-align: center; color:white;">Iris Flower Data Analysis</h1>
+        <form action="" method="post">
+            <table>
+                {%csrf_token%}
+                <tr>
+                    <td>Sepal Length :</td>
+                    <td><input type="text" name="sep_len" required></td>
+                </tr>
+                <tr>
+                    <td>Sepal Width  : </td>
+                    <td><input type="text" name="sep_wid" required></td>
+                </tr>
+                <tr>
+                    <td>Petal Length : </td>
+                    <td><input type="text" name="pet_len" required></td>
+                </tr>
+                <tr>
+                    <td>Petal Width : </td><td><input type="text" name="pet_wid" requuired></td>
+                </tr>
+                <tr>
+                   <td colspan="2" align="center">
+                    <input type="submit">
+                   </td> 
+                </tr>   
+            </table>
+        </form>
+         
+        <div class='result'>
+            {% if color_type %}
+                <p>Flower type is {{color_type}}</p>
+            {% endif %}
+        </div>
+    </div>
+    
+</body>
+</html>
